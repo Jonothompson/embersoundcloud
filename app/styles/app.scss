@@ -1,0 +1,47 @@
+$gutter: 0em;
+@import "bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "bower_components/neat/app/assets/stylesheets/neat";
+
+.musicPlayer {
+
+	@include span-columns(6);
+	@include shift(3);
+	border: 1px solid dimgray;
+}
+
+.startStop {
+	border: 1px solid dimgray;
+	@include span-columns(4);
+	height: 150px;
+}
+
+.info {
+	border: 1px solid dimgray;
+	@include span-columns(8);
+	height: 75px;
+	text-align: center;
+	font-size: .5em;
+
+	
+	.infoLabels {
+		display: inline-block;
+		
+	}
+}
+
+.progressBar {
+	border: 1px solid dimgray;
+	@include span-columns(8);
+	height: 75px;
+	
+	.progressionBar {
+		height: 5px;
+		border: 1px solid dimgray;
+	}
+}
+
+.stats {
+	border: 1px solid dimgray;
+	@include span-columns(12);
+	height: 75px;
+}
