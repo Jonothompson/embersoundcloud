@@ -5,8 +5,8 @@
 	<div class="info">
 		<span><button>Repeat</button></span>
 		<div class="infoLabels">
-			<h2>Song Title</h2>
-			<h2>Artist</h2>
+			<h2>{{model.title}}</h2>
+			<h2>{{model.user.username}}</h2>
 		</div>
 		<span><button>Volume</button></span>
 	</div>
@@ -18,9 +18,11 @@
 	<div class="stats">
 		<a class="soundCloudLog">logo</a>
 		<a class="buy">BUY</a>
-		<a class="listens">1,000,000</a>
-		<a class="likes">5,000</a>
+		<a class="listens">{{model.playback_count}}</a>
+		<a class="likes">{{model.favoritings_count}}</a>
 	</div>
 </section>
+
+{{log model}}
 
 {{outlet}}
